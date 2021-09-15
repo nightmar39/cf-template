@@ -1,7 +1,7 @@
 version: "1.0"
 kind: "pipeline"
 metadata:
-  name: "my-pipeline-1"
+  name: "my-pipeline-2"
 spec:
   triggers:
     - type: "git"
@@ -19,5 +19,8 @@ spec:
       value: "secret-value"
       encrypted: true
   specTemplate:
-    pipeline: 
+    location: git
+    repo: nightmar39/cf-template
+    path: cf-template/cf-basic-template.yml 
+    revision: main  
   steps: {}
