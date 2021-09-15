@@ -1,0 +1,23 @@
+version: "1.0"
+kind: "pipeline"
+metadata:
+  name: "my-pipeline-1"
+spec:
+  triggers:
+    - type: "git"
+      name: "trigger1"
+      provider: "github"
+      repo: "nightmar39/test-repo"
+      events: ["push", "pullrequest"]
+      branchRegex: '/./'
+  contexts: []
+  variables:
+    - key: "PORT"
+      value: 3000
+      encrypted: false
+    - key: "SECRET"
+      value: "secret-value"
+      encrypted: true
+  specTemplate:
+    pipeline: 
+  steps: {}
