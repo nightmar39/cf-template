@@ -21,6 +21,6 @@ spec:
   specTemplate:
     location: git
     repo: nightmar39/cf-template
-    path: cf-template/cf-basic-template.yml 
+    path: ./cf-basic-template.yml 
     revision: main  
   steps: {}
