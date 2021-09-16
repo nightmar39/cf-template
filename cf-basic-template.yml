@@ -26,7 +26,7 @@ steps:
       image: 'quay.io/codefreshplugins/alpine:3.8'
       commands:
         - echo "Hello world"
-        - echo "asdasd"
+        - echo "Anthony"
     test:
       title: "Running test"
       type: "freestyle" # Run any command
