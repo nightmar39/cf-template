@@ -20,6 +20,7 @@ spec:
       encrypted: true
   specTemplate:
     location: git
+    context: github
     repo: nightmar39/cf-template
     path: ./cf-basic-template.yml 
     revision: main  

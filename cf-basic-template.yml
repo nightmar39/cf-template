@@ -27,5 +27,11 @@ steps:
       commands:
         - echo "Hello world"
         - echo "asdasd"
-
-    
+    test:
+      title: "Running test"
+      type: "freestyle" # Run any command
+      image: 'ubuntu:latest' # The image in which command will be executed
+      commands:      
+        - pwd 
+        - ls -la 
+        - ls -la gunn
